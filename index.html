@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oshxona Menyusi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Onlayn Oshxona</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#salads">Salatlar</a></li>
+                <li><a href="#main-courses">Asosiy taomlar</a></li>
+                <li><a href="#drinks">Ichimliklar</a></li>
+                <li><a href="#desserts">Desertlar</a></li>
+                <li><a href="#contact">Aloqa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="salads" class="menu-section">
+            <h2>Salatlar</h2>
+            <div class="menu-item">
+                <img src="olivyr.webp" alt="Salat">
+                <div>
+                    <h3>Olivye</h3>
+                    <p>Tarkibi: kartoshka, sabzi, kolbasa, tuxum.</p>
+                    <p>Narxi: 20,000 so‘m</p>
+                    <button onclick="addToCart('Olivye', 20000)">Savatga qo'shish</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="main-courses" class="menu-section">
+            <h2>Asosiy taomlar</h2>
+            <div class="menu-item">
+                <img src="osh.webp" alt="Plov">
+                <div>
+                    <h3>Plov</h3>
+                    <p>Tarkibi: guruch, go'sht, sabzi, yog‘.</p>
+                    <p>Narxi: 35,000 so‘m</p>
+                    <button onclick="addToCart('Plov', 35000)">Savatga qo'shish</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="drinks" class="menu-section">
+            <h2>Ichimliklar</h2>
+            <div class="menu-item">
+                <img src="choy.webp" alt="Choy">
+                <div>
+                    <h3>Choy</h3>
+                    <p>Tarkibi: choy barglari, suv.</p>
+                    <p>Narxi: 5,000 so‘m</p>
+                    <button onclick="addToCart('Choy', 5000)">Savatga qo'shish</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="desserts" class="menu-section">
+            <h2>Desertlar</h2>
+            <div class="menu-item">
+                <img src="lakomka.webp" alt="Tort">
+                <div>
+                    <h3>Tort</h3>
+                    <p>Tarkibi: un, tuxum, shakar, krem.</p>
+                    <p>Narxi: 15,000 so‘m</p>
+                    <button onclick="addToCart('Tort', 15000)">Savatga qo'shish</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="cart">
+        <h2>Savat</h2>
+        <ul id="cart-items"></ul>
+        <p>Umumiy summa: <span id="total-price">0</span> so‘m</p>
+        <button id="checkout-button">Buyurtmani tasdiqlash</button>
+    </section>
+
+    <footer>
+        <p>© 2024 Onlayn Oshxona. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
